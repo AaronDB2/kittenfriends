@@ -29,6 +29,7 @@ class App extends Component {
     const filteredKittens = kittens.filter(kitten => kitten.name.toLowerCase().includes(searchField.toLowerCase()))
     return (
       <div className="App">
+        <h1> Kittens Rolodex </h1>
         <SearchBox placeholder='search kitty' handleChange={this.handleChange}/>
         <CardList kittens={filteredKittens}/>
       </div>
